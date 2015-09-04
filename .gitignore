@@ -1,0 +1,10 @@
+*~
+*.pyc
+*.log
+*.in
+*.txt
+*.trj
+*.lammpstrj
+*.lammpstrj.gz
+*.txt
+*.png
