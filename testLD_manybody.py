@@ -19,7 +19,7 @@ Traj = ''
 
 if runLammps:
 	#parameter for number of molecules
-	NMol = 30
+	NMol = 3
 
 	#setpoint temperature
 	TempSet = 1.0
