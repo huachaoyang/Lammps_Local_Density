@@ -47,7 +47,7 @@
 857c879
 <         for fn in LammpsFiles + [LogFile]:
 ---
->         for fn in LammpsFiles + [LogFile] + [JobScript]:
+>         for fn in LammpsFiles + [LogFile] + [JobFile]:
 863c885,934
 <     
 \ No newline at end of file
