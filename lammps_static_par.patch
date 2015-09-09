@@ -1,0 +1,26 @@
+1c1
+< #/usr/bin/env python
+---
+>  #/usr/bin/env python
+6a7
+> import os
+17a19,21
+> #parallel lammps
+> RunParallel = True
+> NSlaves = 4
+822a827
+> 
+823a829,834
+>     if RunParallel:
+>     	print 'Submitting parallel job on %d cores' % NSlaves    
+>         s = "mpiexec -np %d " % NSlaves + s
+>     else:
+>     	print 'Serial job run from currently active core'
+>     
+826a838
+>     
+861,863d872
+< 
+< 
+<     
+\ No newline at end of file
