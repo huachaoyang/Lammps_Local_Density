@@ -26,11 +26,11 @@
 ---
 >     # freecores - built by SPC and kept in /home/tsanyal/.scripts
 >     NSlaves_MAX = int(os.popen('freecores').read().strip())
->     if RunParallel: # and NSlaves <= NSlaves_MAX:
+>     if RunParallel and NSlaves <= NSlaves_MAX:
 >     	print 'Submitting parallel job on %d cores' % NSlaves    
 >         p = RunParLammps(InFile = InFile, LogFile = LogFile, JobFile = JobFile, NSlaves = NSlaves)
 >     else:
->     	print 'Serial job run from currently active core'
+>     	print 'Not enough cores. Submitting serial job on currently active core'
 >     	p = subprocess.Popen(s, shell = True, 
 >                              stdout = subprocess.PIPE,
 >                              stderr = subprocess.STDOUT)
